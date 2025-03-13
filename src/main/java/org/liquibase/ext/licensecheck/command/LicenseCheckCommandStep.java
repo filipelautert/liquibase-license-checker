@@ -7,7 +7,7 @@ import liquibase.license.LicenseServiceUtils;
 
 public class LicenseCheckCommandStep extends AbstractCommandStep {
 
-    protected static final String[] COMMAND_NAME = new String[]{"icense-check"};
+    protected static final String[] COMMAND_NAME = new String[]{"licenseCheck"};
 
     @Override
     public String[][] defineCommandNames() {
