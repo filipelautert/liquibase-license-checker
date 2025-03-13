@@ -16,7 +16,8 @@ public class LicenseCheckCommandStep extends AbstractCommandStep {
 
     @Override
     public void run(CommandResultsBuilder resultsBuilder) throws Exception {
-        Scope.getCurrentScope().getLog(LicenseCheckCommandStep.class).info("Checking pro license is valid...");
+        Scope.getCurrentScope().getLog(LicenseCheckCommandStep.class).info("Checking pro license...");
         LicenseServiceUtils.checkProLicenseAndThrowException(COMMAND_NAME);
+        Scope.getCurrentScope().getLog(LicenseCheckCommandStep.class).info("Pro license is valid!");
     }
 }
