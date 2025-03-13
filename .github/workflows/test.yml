@@ -27,7 +27,7 @@ jobs:
         - name: Archive artifact
           uses: actions/upload-artifact@v4
           with:
-            name: liquibase-license-checker
+            name: liquibase-license-checker-artifacts
             path: |
               target/*.jar
             
